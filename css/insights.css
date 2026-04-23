@@ -1,0 +1,125 @@
+/* Insights Page Styles */
+
+.page-header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10rem 0 6rem;
+    text-align: center;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+
+.insight-card {
+    background: var(--white);
+    border-radius: 2px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid #edf2f7;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.card-image.placeholder {
+    height: 240px;
+    background: #e2e8f0;
+    position: relative;
+}
+
+.card-image.placeholder::after {
+    content: 'Article Preview';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a0aec0;
+}
+
+.card-content {
+    padding: 2.5rem;
+}
+
+.card-content .category {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.card-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.card-content .date {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.newsletter-box {
+    background: var(--primary);
+    color: var(--white);
+    padding: 6rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.newsletter-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-box p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .insights-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+    .insights-grid { grid-template-columns: 1fr; }
+    .newsletter-box { padding: 4rem 2rem; }
+    .newsletter-form { flex-direction: column; }
+}

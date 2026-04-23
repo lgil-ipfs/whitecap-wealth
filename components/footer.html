@@ -1,0 +1,133 @@
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Whitecap Wealth" class="footer-logo">
+                <p>Vancouver-based wealth management firm dedicated to preserving and growing your legacy through disciplined risk management and strategic estate planning.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Leigh Grant</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="insights.html">Market Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#estate">Estate Planning</a></li>
+                    <li><a href="services.html#risk">Risk Management</a></li>
+                    <li><a href="services.html#life">Life Insurance</a></li>
+                    <li><a href="services.html#retirement">Retirement Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p>Vancouver, British Columbia</p>
+                <p><a href="mailto:info@whitecapwealth.ca">info@whitecapwealth.ca</a></p>
+                <div class="social-icons">
+                    <!-- Social Icons would go here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Whitecap Wealth. All Rights Reserved. Whitecap is an unincorporated trade name used for Leigh Grant.</p>
+            <p class="disclaimer">Investment advice is offered through Customplan Financial Advisors. Insurance products are provided through Leigh Grant, licensed in British Columbia.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+.main-footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 6rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-brand p {
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    font-size: 0.95rem;
+    max-width: 300px;
+}
+
+.footer-logo {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-grid h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links ul li, .footer-services ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a, .footer-services a {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover, .footer-services a:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
+.footer-contact p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+</style>

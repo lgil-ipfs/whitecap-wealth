@@ -1,0 +1,224 @@
+/* Home Page Specific Styles */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--white);
+    margin-top: -90px; /* Offset for header so it's transparent on hero */
+}
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.8) 0%, rgba(0, 51, 102, 0.4) 100%);
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.hero-scroll-indicator p {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* Section Common */
+.section {
+    padding: 10rem 0;
+}
+
+.subtitle {
+    display: block;
+    color: var(--accent);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Intro Section */
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.intro-text .accent-text {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.btn-text {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+
+.portrait {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px var(--accent);
+}
+
+/* Services Preview */
+.services-preview {
+    background: #f0f4f8;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 3.5rem 2.5rem;
+    border-radius: 2px;
+    transition: var(--transition);
+    border-bottom: 3px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: var(--accent);
+    box-shadow: var(--shadow);
+}
+
+.service-card .icon {
+    color: var(--accent);
+    margin-bottom: 2rem;
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.service-card .link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--primary);
+    color: var(--white);
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.cta-content blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    font-style: italic;
+}
+
+.cta-content cite {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 992px) {
+    .hero-content h1 { font-size: 3.5rem; }
+    .intro-grid { grid-template-columns: 1fr; gap: 4rem; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.8rem; }
+    .hero-btns { flex-direction: column; padding: 0 2rem; }
+    .intro-text h2 { font-size: 2.5rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .cta-content blockquote { font-size: 1.8rem; }
+}

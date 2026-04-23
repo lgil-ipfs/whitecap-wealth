@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitecap Wealth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="subtitle">Get In Touch</span>
+                <h1>Let’s Discuss Your<br><span class="serif">Financial Future.</span></h1>
+            </div>
+        </section>
+
+        <section class="contact-section section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Details</h2>
+                        <p>We are based in Vancouver, serving clients throughout British Columbia. Schedule a complimentary discovery meeting to explore how we can help you achieve your goals.</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="label">Email</span>
+                                <span class="value"><a href="mailto:info@whitecapwealth.ca">info@whitecapwealth.ca</a></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Location</span>
+                                <span class="value">Vancouver, British Columbia</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Hours</span>
+                                <span class="value">Monday – Friday: 9am – 5pm</span>
+                            </div>
+                        </div>
+
+                        <div class="compliance-note">
+                            <p>Whitecap Wealth is an unincorporated trade name used for Leigh Grant. Insurance products are provided through Leigh Grant.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Area of Interest</label>
+                                <select id="interest" name="interest">
+                                    <option value="estate">Estate Planning</option>
+                                    <option value="risk">Risk Management / Insurance</option>
+                                    <option value="retirement">Retirement Planning</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/global.js"></script>
+</body>
+</html>

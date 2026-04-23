@@ -1,0 +1,120 @@
+<header class="main-header">
+    <div class="container">
+        <nav class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Whitecap Wealth Logo" id="header-logo">
+                <span class="brand-text">Whitecap <span class="thin">Wealth</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="insights.html">Insights</a>
+                <a href="contact.html" class="btn-nav">Contact</a>
+            </div>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+.main-header {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(51%) saturate(2815%) hue-rotate(193deg) brightness(93%) contrast(106%); /* Matches --primary */
+}
+
+.brand-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-text .thin {
+    font-weight: 300;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.btn-nav {
+    padding: 0.7rem 1.8rem !important;
+    background: var(--primary);
+    color: var(--white) !important;
+    border-radius: 2px;
+}
+
+.btn-nav:hover {
+    background: var(--accent);
+    color: var(--white) !important;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    .nav-wrapper {
+        height: 70px;
+    }
+}
+</style>
