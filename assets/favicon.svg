@@ -1,7 +1,8 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="8" fill="#003366" />
-  <g fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10 45 L25 25 L40 40 L50 20 L60 45" />
-    <path d="M10 50 Q 30 50 40 35 Q 50 20 60 45" stroke-width="4" />
+  <rect width="64" height="64" rx="12" fill="#003366" />
+  <g transform="translate(8, 8) scale(0.1)" stroke="white" stroke-width="30" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 50 300 L 180 150 L 220 190 L 320 80 L 450 220" />
+    <path d="M 230 310 C 300 310, 380 280, 450 200 C 500 130, 450 110, 400 130 C 350 150, 380 200, 420 220 C 380 180, 320 180, 280 220 C 240 260, 250 310, 230 310 Z" fill="white" />
+    <path d="M 50 300 L 230 310" />
   </g>
 </svg>
