@@ -1,0 +1,15 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain & Wave Icon -->
+  <g fill="none" stroke="#003366" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Mountain Peaks -->
+    <path d="M40 80 L70 40 L100 70 L130 30 L170 80" />
+    <!-- The Wave -->
+    <path d="M30 90 C 60 90, 80 60, 110 60 C 140 60, 160 90, 190 90 L 190 95 L 30 95 Z" fill="#003366" />
+    <!-- Whitecap detail -->
+    <path d="M100 65 C 115 55, 125 55, 140 65" stroke="white" stroke-width="2" />
+  </g>
+  
+  <!-- Text -->
+  <text x="210" y="65" font-family="Montserrat, sans-serif" font-size="32" font-weight="700" fill="#003366" letter-spacing="2">WHITECAP</text>
+  <text x="210" y="100" font-family="Montserrat, sans-serif" font-size="28" font-weight="300" fill="#003366" letter-spacing="8">WEALTH</text>
+</svg>
