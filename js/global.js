@@ -13,7 +13,7 @@ async function loadComponents() {
 
     if (headerPlaceholder) {
         try {
-            const response = await fetch('components/header.html');
+            const response = await fetch('header.html');
             const data = await response.text();
             headerPlaceholder.innerHTML = data;
             initMobileMenu();
@@ -25,7 +25,7 @@ async function loadComponents() {
 
     if (footerPlaceholder) {
         try {
-            const response = await fetch('components/footer.html');
+            const response = await fetch('footer.html');
             const data = await response.text();
             footerPlaceholder.innerHTML = data;
         } catch (error) {
